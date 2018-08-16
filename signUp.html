@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Invigorate</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="signIn.css">
+    <script src="signUp.js" defer></script>
+    <link rel="icon" href="https://cdn.glitch.com/3ba9ad95-e454-4e0f-aeda-13806c405dd2%2FLogoMakr_1xjoeh.png?1533937473959">
+    
+<script src="https://www.gstatic.com/firebasejs/5.3.1/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyAdFXr5hxUzu_jYWumP_LEUOMB_3D2JkXE",
+    authDomain: "fir-day-c2def.firebaseapp.com",
+    databaseURL: "https://fir-day-c2def.firebaseio.com",
+    projectId: "fir-day-c2def",
+    storageBucket: "fir-day-c2def.appspot.com",
+    messagingSenderId: "68401281189"
+  };
+  firebase.initializeApp(config);
+</script>
+  </head>  
+  <body>
+    <div id="heading">
+      <img src="https://cdn.glitch.com/3ba9ad95-e454-4e0f-aeda-13806c405dd2%2FLogoMakr_9wNR1Q.png?1533926024765">
+    </div>
+  <form action="index.html">
+    <div>
+      <label for="username" ><strong>Username</strong></label>
+      <br>
+      <input class="text" id="username" placeholder="Username" name="username" required>
+      <br>
+      <label for="password"><strong>Password</strong></label>
+      <br>
+      <input class="text" id="psw" type="password" placeholder="Password" name="password" required>
+      <br>
+      <label for="confirmPassword"><strong>Confirm Password</strong></label>
+      <br>
+      <input class="text" type="password" placeholder="Confirm password" name="confirmPassword" required>
+      <br>
+    </div>
+    
+    <div>
+      <label for="name"><strong>Name</strong></label>
+      <br>
+      <input class="text" placeholder="Full name..." name="name" required>
+      <br>
+    </div>
+    <p><strong>Sex</strong></p>
+    <div required>
+      <input type="radio" name="gender" value="Male">
+      <label>Male</label>
+      <input type="radio" name="gender" value="Female">
+      <label>Female</label>
+      <input type="radio" name="gender" value="Non-Binary">
+      <label>Non-Binary</label>
+      <br><br>
+    </div>
+
+    
+    <p><strong>Disability</strong></p>
+    <div required>
+      <input type="radio" name="disability" value="Wheel Chair">
+      <label>Cruch</label>
+      <input type="radio" name="disability" value="Cruch">
+      <label>Cane</label>
+      <input type="radio" name="disabilty" value="Cane">
+      <label>Wheel Chair</label>
+       <input type="radio" name="disabilty" value="Walker">
+      <label>Walker</label>
+       <input type="radio" name="disabilty" value="other">
+      <label>Other</label>
+      
+      
+      <br><br>
+    </div>
+    
+<!--     <div>
+      <label for="disability"><strong>Disability</strong></label>
+      <br>
+      <input class="text" placeholder="Type your disability here..." name="disability" required>
+      <br>
+    </div> -->
+    
+    <div>
+      <label for="location"><strong>Location</strong></label>
+      <br>
+      <select class="text" name="location" required>
+        <option>Brooklyn</option>
+        <option>Manhattan</option>
+        <option>The Bronx</option>
+        <option>Queens</option>
+      </select>
+    </div>
+    <br>
+        <button id = "makeaccount" type="submit">Sign-Up</button>
+    </form>
+    <p>Already have an account?<br>Login <a href="signIn.html">here</a></p>
+  </body>
+</html>

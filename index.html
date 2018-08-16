@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Invigorate</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="index.css">
+    <script src="script.js" defer></script>
+    <link rel="icon" href="https://cdn.glitch.com/3ba9ad95-e454-4e0f-aeda-13806c405dd2%2FLogoMakr_1xjoeh.png?1533937473959">
+    
+    
+  <script src="https://www.gstatic.com/firebasejs/5.3.1/firebase.js"></script>
+  <script>
+    // Initialize Firebase
+    var config = {
+      apiKey: "AIzaSyAoZhmaWuBKqS5Nd21LKUfG0DjCUatn0nM",
+      authDomain: "invigorate-213215.firebaseapp.com",
+      databaseURL: "https://invigorate-213215.firebaseio.com",
+      projectId: "invigorate-213215",
+      storageBucket: "invigorate-213215.appspot.com",
+      messagingSenderId: "18901259012"
+    };
+    firebase.initializeApp(config);
+  </script>
+  </head>  
+  <body>
+   
+   
+    
+    <div id="heading">
+       <img src="https://cdn.glitch.com/3ba9ad95-e454-4e0f-aeda-13806c405dd2%2FLogoMakr_9wNR1Q.png?1533926024765">
+    </div>
+   
+    <div id="location">
+       <p id="current">
+ 
+      </p>
+    
+      <div class="dropdown">
+  <button class="dropbtn">Change Location</button>
+  <div class="dropdown-content">
+    <a href="#" id="Q">Queens</a>
+    <a href="#" id="BR">Brookyln</a>
+    <a href="#" id="BX">Bronx</a>
+    <a href="#" id="M">Manhattan</a>
+  </div>
+</div>
+    </div>
+  <br>
+  <div id="map">
+    <script>
+      function initMap() {
+        map = new google.maps.Map(document.getElementById('map'), {
+          center: {lat: 40.7128, lng: -74.0060},
+          zoom: 8
+        });
+      }
+      
+      
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA4ulFfgnlevFN2mg0nUUQPQWH5_uAPDR8&callback=initMap"
+    async defer></script>
+  </div>
+    
+    <div id= "pages">
+      <form action="signIn.html">
+    <input type="submit" value="Sign Out" />
+</form>
+      <br>
+     </div>
+  <div id="last">
+    <footer id="info">
+  
+      <div id="textplace">
+        <textarea id="text" class = "block" placeholder="Report issue here..."></textarea>
+        <div id="alerts" class = "block">
+        
+        </div> 
+        <br>
+        <button id="submit">Submit</button>
+
+      </div>
+       </footer>
+    </div>
+  
+    
+   <footer id="foot">
+   
+        
+    <div id=contactUs>
+        <p class="textFooter" id = "contact">Contact Us </p>
+        <a href = "https://www.instagram.com/invigorate_inc/?hl=en">
+        <img id="ig" src = "https://cdn.glitch.com/3ba9ad95-e454-4e0f-aeda-13806c405dd2%2Fphoto.svg?1534376979651">
+        </a>
+    </div>
+
+   <div id="app"> 
+        <p class="textFooter" id = "Mobileapp">Mobile App</p>
+        <img id="logo" src="https://cdn.glitch.com/3ba9ad95-e454-4e0f-aeda-13806c405dd2%2FLogoMakr_1xjoeh.png?1533937473959"> 
+  </div>    
+       
+     
+      <p class="textFooter" id="bold" >
+        Invigorate
+      </p>    
+   </footer>
+  </body>
+</html>

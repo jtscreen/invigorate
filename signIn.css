@@ -1,0 +1,44 @@
+img{
+    width: 60%;
+    height: 20vh;
+    
+  }
+  #heading{
+    display: flex;
+    justify-content:center;
+   
+  }
+  
+  body{
+    text-align: center;
+  }
+  .text{
+    width: 50%;
+    height: 5vh;
+    background-color: white;
+  }
+  
+  ::placeholder{
+    color: grey;
+  }
+  
+  label{
+    font-size: 19px;
+  }
+  p{
+    font-size: 19px;
+  }
+  button{
+    width: 50%;
+    height: 5vh;
+    background-color: orange;
+  }
+  button:hover {
+      opacity: 0.8;
+  }
+  #signInCard{
+    margin: 0 auto;
+    width:50%;
+  } 
+  
+  

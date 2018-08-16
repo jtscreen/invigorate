@@ -1,0 +1,154 @@
+<html>
+<head>
+  <head>
+    <title>Invigorate</title>
+    
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="signIn.css">
+<!--     <script src="/script.js" defer></script> -->
+    <script src = "signIn.js" defer></script>
+    <link rel="icon" href="https://cdn.glitch.com/3ba9ad95-e454-4e0f-aeda-13806c405dd2%2FLogoMakr_1xjoeh.png?1533937473959">
+  
+<script src="https://www.gstatic.com/firebasejs/5.3.1/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyAdFXr5hxUzu_jYWumP_LEUOMB_3D2JkXE",
+    authDomain: "fir-day-c2def.firebaseapp.com",
+    databaseURL: "https://fir-day-c2def.firebaseio.com",
+    projectId: "fir-day-c2def",
+    storageBucket: "fir-day-c2def.appspot.com",
+    messagingSenderId: "68401281189"
+  };
+  firebase.initializeApp(config);
+</script>
+    
+  
+  </head>  
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+   
+  
+  
+  <style>
+body {font-family: Arial, Helvetica, sans-serif;}
+form {border: 3px solid #f1f1f1;}
+
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: orange;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+
+
+.imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+}
+
+img.avatar {
+    width: 15%;
+    border-radius: 75%;
+}
+
+.container {
+    padding: 16px;
+}
+
+span.psw {
+    float: right;
+    padding-top: 16px;
+}
+
+
+@media screen and (max-width: 300px) {
+    span.psw {
+       display: block;
+       float: none;
+    }
+    .cancelbtn {
+       width: 100%;
+    }
+}
+</style>
+</head>
+<body>
+
+<h2>Login Form</h2>
+
+  <div id="heading">
+       <img src="https://cdn.glitch.com/3ba9ad95-e454-4e0f-aeda-13806c405dd2%2FLogoMakr_9wNR1Q.png?1533926024765">
+         </div>
+  
+  <p class= "mission">
+   Accessibilty Is a Click Away
+    </p>
+  
+   <form action="">
+  <div class="imgcontainer">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRwHiEiXNzlbQqj5M1VQF_-ZgtQapK9thfoWQr9CzPEJ0AwjjyN" alt="Avatar" class="avatar">
+  </div>
+     
+
+     <div class="avatar">
+       
+       
+     </div>
+     
+  <div class="container" id = "signInCard">
+    <label for="uname"><b>Username</b></label>
+    <input id = "username" type="text" placeholder="Enter Username" name="uname" required>
+
+    <label for="psw"><b>Password</b></label>
+    <input id="pass" type="password" placeholder="Enter Password" name="psw" required>
+        
+    <button id = "login" type="submit">Login</button>
+    <label>
+     
+      <input type="checkbox" checked="checked" name="remember"> Remember me
+    
+    </label>
+    
+    
+    <a href="signUp.html">
+   <button id = "signup" class="signUp" type="button"  > Sign Up</button>
+      
+  </a> 
+     <span class="psw">Forgot <a href="#">password?</a></span>
+   
+  </div>
+
+
+</form>
+  
+   
+
+</body>
+</html>
+
+
+
+
+
+    
+ 
